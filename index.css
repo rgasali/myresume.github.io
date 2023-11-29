@@ -1,0 +1,298 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    
+    margin: 0;
+    
+    overflow-x: hidden;
+    display: flex;  
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/****************** media querie******************/
+
+@media screen and (min-width:320px) {
+
+header{
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1, h2{
+    position: absolute;
+    z-index:101 ;
+    color: white;
+}
+
+
+h1{
+    left: 28vh;
+    font-size: 1.5rem;
+    margin-top: 3.6rem;
+}
+h2{
+    font-size: 1rem;
+    margin-top: 22vh;
+    margin-left: 1rem;
+    width: 80vw;
+}
+
+.contenedor-img-programacion{
+position: absolute;    
+top: 0;
+width: 100vw;
+height: 50vh;
+
+}
+
+.img-programacion{
+  width: 100%;  
+    
+}
+
+.contenedor-img-cara{
+    position: absolute;
+    z-index: 100;
+    top: 2vh;
+    left: 2vh;
+    overflow: hidden;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+}
+
+.img-cara{
+    position: relative;
+    top:-40px;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+
+main{
+margin-top: 24vh;
+color: rgb(124, 133, 135);
+}
+
+main section {
+    background-color: rgb(239, 239, 239);
+}
+
+.separador{
+background-color: rgb(124, 133, 135);
+height: .5rem;
+width: 25vw;
+
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.socials p{
+   margin: auto;
+}
+
+
+
+.img-icon-social{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+}
+
+
+
+
+
+.menu a div{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+}
+
+
+/****************** media querie******************/
+
+@media screen and (min-width:375px) {
+h1 {
+    left: 34vh;    
+}
+
+h2 {
+    margin-top: 26vh;
+}
+
+main {
+    margin-top: 32vh;
+}
+
+}
+
+/****************** media querie******************/
+
+@media screen and (min-width:425px) {
+h1 {
+        font-size: 2rem;
+        left: 35vh;
+    }
+
+    h2 {
+        margin-top: 30vh;
+        font-weight: 900;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .5); 
+    }
+
+    main {
+        margin-top: 32vh;
+    }
+
+}
+
+/****************** media querie (tablet)******************/
+
+@media screen and (min-width:768px){
+
+    header {
+            flex-direction: row;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 20vh;
+            z-index: 996;
+        }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+        width: 60vw;
+    }
+
+    h2 {
+        margin-top: 10rem;
+        margin-left: 20vw;
+
+    }
+
+    .contenedor-img-programacion {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 10%;
+        
+    }
+   
+    .img-programacion {
+        width: 100%;
+        height: 30vh;  
+    }
+
+    .contenedor-img-cara {
+        position: absolute;
+        z-index: 100;
+        top: 2vh;
+        left: 2vh;
+        overflow: hidden;
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30vh;
+    }
+    main section{
+        padding-left: 2vw;
+        width: 50vw;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    .training{
+        position: relative;
+        top: -400px;
+    }
+    
+    .languages{
+        position: relative;
+        top: -160px;
+        left: -49vw;
+        height: 160px;
+    }
+}
+
+
+/****************** media querie (tablet)******************/
+
+@media screen and (min-width:1024px) {
+
+    .contenedor-img-cara{
+        width: 164px;
+        height: 164px;
+    }
+    
+        .contenedor-img-programacion {
+            position: absolute;
+            top: 0;
+            width: 1024px;
+            height: 10%;
+            
+        }
+    h1{
+        width: 600px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    h2{
+        width: 600px;
+    }
+    
+    header{
+        width: 1024px;
+        margin: 0 auto;
+        left: auto;
+        
+    }
+    body{
+        width: 1024px;
+        margin: 0 auto
+    }
+    main section{
+        width: 512px;
+        justify-content: center;
+        ;
+    }
+
+    .languages{
+        left: -50%;
+    }
+}
